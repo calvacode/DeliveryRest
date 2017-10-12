@@ -2,19 +2,21 @@ package br.com.nosso.sushi.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import org.springframework.data.annotation.Id;
 
 @Data
+@EqualsAndHashCode
 @AllArgsConstructor
-@NoArgsConstructor
+@ToString(callSuper = true)
 public class Cliente {
 
-    @NonNull
+    @Id
+    private String id;
+
     private String nome;
-    @NonNull
     private String telefone;
-    @NonNull
     private String endereco;
 
 }
