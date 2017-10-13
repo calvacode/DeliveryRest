@@ -6,6 +6,8 @@ import lombok.EqualsAndHashCode;
 import lombok.ToString;
 import org.springframework.data.annotation.Id;
 
+import java.util.List;
+
 @Data
 @EqualsAndHashCode
 @AllArgsConstructor
@@ -17,8 +19,7 @@ public class Customer {
 
     private String name;
     private String phone;
-    private String address;
-
+    private List<String> address;
 
 
 }

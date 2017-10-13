@@ -6,6 +6,6 @@ public interface CustomerGateway {
 
     Customer save(Customer customer);
 
-    Customer findCustomerByName(String name);
+    Customer findCustomerByPhone(String phone);
 
 }

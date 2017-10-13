@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("v1/delivery")
+@RequestMapping("v1/delivery/customer")
 public class CustomerController {
 
     private final CrudCustomer crudCustomer;
@@ -22,10 +22,9 @@ public class CustomerController {
         return ResponseEntity.ok(customer);
     }
 
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public Customer find(@RequestParam String customerName){
-
-        return crudCustomer.findCustomerByName(customerName);
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE, value = "/{phone}")
+    public Customer find(@PathVariable("phone") String phone){
+        return crudCustomer.findCustomerByPhone(phone);
     }
 
 }

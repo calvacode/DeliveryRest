@@ -13,7 +13,7 @@ public class CrudCustomer {
 
     public Customer createCustomer(Customer customer){return customerGateway.save(customer);}
 
-    public Customer findCustomerByName(String name){return customerGateway.findCustomerByName(name);}
+    public Customer findCustomerByPhone(String phone){return customerGateway.findCustomerByPhone(phone);}
 
 
 
