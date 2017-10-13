@@ -1,2 +1,7 @@
-
+spring:
+  data:
+    mongodb:
+      database: NossoSushi
+      host: localhost
+      port: 27017
 
