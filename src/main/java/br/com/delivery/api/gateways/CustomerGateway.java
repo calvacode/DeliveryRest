@@ -1,6 +1,6 @@
-package br.com.nosso.sushi.gateways;
+package br.com.delivery.api.gateways;
 
-import br.com.nosso.sushi.domain.Customer;
+import br.com.delivery.api.domain.Customer;
 
 public interface CustomerGateway {
 

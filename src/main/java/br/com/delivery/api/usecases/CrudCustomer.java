@@ -1,7 +1,7 @@
-package br.com.nosso.sushi.usecases;
+package br.com.delivery.api.usecases;
 
-import br.com.nosso.sushi.domain.Customer;
-import br.com.nosso.sushi.gateways.CustomerGateway;
+import br.com.delivery.api.domain.Customer;
+import br.com.delivery.api.gateways.CustomerGateway;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

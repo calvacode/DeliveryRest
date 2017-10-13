@@ -1,4 +1,4 @@
-package br.com.nosso.sushi.config;
+package br.com.delivery.api.config;
 
 import org.springframework.context.annotation.Bean;
 import springfox.documentation.service.ApiInfo;
@@ -14,7 +14,7 @@ public class ApplicationSwaggerConfig {
 
     private ApiInfo apiInfo() {
         ApiInfo apiInfo = new ApiInfo(
-                "Sushi REST API",
+                "Delivery REST API",
                 "Exemplo de descrição da API.",
                 "Versão API 1.0",
                 "Termos de uso",

@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      database: NossoSushi
+      database: delivery
       host: localhost
       port: 27017
 

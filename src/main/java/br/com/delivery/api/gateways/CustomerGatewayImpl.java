@@ -1,7 +1,7 @@
-package br.com.nosso.sushi.gateways;
+package br.com.delivery.api.gateways;
 
-import br.com.nosso.sushi.domain.Customer;
-import br.com.nosso.sushi.gateways.mongo.CustomerRepository;
+import br.com.delivery.api.domain.Customer;
+import br.com.delivery.api.gateways.mongo.CustomerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

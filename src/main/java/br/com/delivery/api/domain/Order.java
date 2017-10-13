@@ -1,4 +1,4 @@
-package br.com.nosso.sushi.domain;
+package br.com.delivery.api.domain;
 
 import lombok.Data;
 import org.springframework.data.annotation.Id;

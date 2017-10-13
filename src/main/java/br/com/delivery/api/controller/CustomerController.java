@@ -1,7 +1,7 @@
-package br.com.nosso.sushi.controller;
+package br.com.delivery.api.controller;
 
-import br.com.nosso.sushi.domain.Customer;
-import br.com.nosso.sushi.usecases.CrudCustomer;
+import br.com.delivery.api.domain.Customer;
+import br.com.delivery.api.usecases.CrudCustomer;
 import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping("v1/sushi")
+@RequestMapping("v1/delivery")
 public class CustomerController {
 
     private final CrudCustomer crudCustomer;
@@ -27,6 +27,5 @@ public class CustomerController {
 
         return crudCustomer.findCustomerByName(customerName);
     }
-
 
 }
