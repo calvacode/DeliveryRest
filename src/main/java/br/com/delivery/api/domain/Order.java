@@ -13,5 +13,6 @@ public class Order {
 
     private Customer customer;
     private List<Dishe> disheList;
+    private String addressOfDelivery;
 
 }
