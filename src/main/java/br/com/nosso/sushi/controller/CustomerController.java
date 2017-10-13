@@ -1,6 +1,6 @@
-package br.com.nosso.sushi.gateways.http;
+package br.com.nosso.sushi.controller;
 
-import br.com.nosso.sushi.domain.Cliente;
+import br.com.nosso.sushi.domain.Customer;
 import br.com.nosso.sushi.usecases.CadastraCliente;
 import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @AllArgsConstructor
 @RequestMapping("v1/sushi")
-public class ClienteController {
+public class CustomerController {
 
     private final CadastraCliente cadastraCliente;
 
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity save(@RequestBody Cliente cliente){
+    public ResponseEntity save(@RequestBody Customer customer){
 
-        cadastraCliente.cadastraCliente(cliente);
+        cadastraCliente.cadastraCliente(customer);
 
-        return ResponseEntity.ok(cliente);
+        return ResponseEntity.ok(customer);
     }
 }

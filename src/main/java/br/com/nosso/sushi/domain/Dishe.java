@@ -5,13 +5,13 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 
 @Data
-public class Prato {
+public class Dishe {
 
     @Id
     private String id;
 
-    private String descricao;
-    private String categoria;
-    private Double valor;
+    private String name;
+    private String category;
+    private Double value;
     private String urlImagem;
 }

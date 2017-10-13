@@ -6,12 +6,12 @@ import org.springframework.data.annotation.Id;
 import java.util.List;
 
 @Data
-public class Pedido {
+public class Order {
 
     @Id
     private String id;
 
-    private Cliente cliente;
-    private List<Prato> pratoList;
+    private Customer customer;
+    private List<Dishe> disheList;
 
 }

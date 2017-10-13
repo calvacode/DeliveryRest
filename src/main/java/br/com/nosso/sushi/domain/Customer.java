@@ -10,13 +10,13 @@ import org.springframework.data.annotation.Id;
 @EqualsAndHashCode
 @AllArgsConstructor
 @ToString(callSuper = true)
-public class Cliente {
+public class Customer {
 
     @Id
     private String id;
 
-    private String nome;
-    private String telefone;
-    private String endereco;
+    private String name;
+    private String phone;
+    private String address;
 
 }

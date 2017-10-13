@@ -1,6 +1,6 @@
 package br.com.nosso.sushi;
 
-import br.com.nosso.sushi.gateways.mongo.ClienteRepository;
+import br.com.nosso.sushi.gateways.mongo.CustomerRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication(scanBasePackages = "br.com.nosso.sushi")
 public class SushiApplication implements CommandLineRunner {
 
-    private final ClienteRepository repository;
+    private final CustomerRepository repository;
 
     public static void main(final String[] args) {
         SpringApplication.run(SushiApplication.class, args);

@@ -1,7 +1,7 @@
 package br.com.nosso.sushi.usecases;
 
-import br.com.nosso.sushi.domain.Cliente;
-import br.com.nosso.sushi.gateways.ClienteGateway;
+import br.com.nosso.sushi.domain.Customer;
+import br.com.nosso.sushi.gateways.CustomerGateway;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -9,10 +9,12 @@ import org.springframework.stereotype.Service;
 @AllArgsConstructor
 public class CadastraCliente {
 
-    private final ClienteGateway clienteGateway;
+    private final CustomerGateway customerGateway;
 
-    public Cliente cadastraCliente(Cliente cliente){
-        return clienteGateway.save(cliente);
+    public Customer cadastraCliente(Customer customer){
+        return customerGateway.save(customer);
     }
+
+
 
 }
