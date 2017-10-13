@@ -1,6 +1,7 @@
 package br.com.delivery.api;
 
 import br.com.delivery.api.gateways.mongo.CustomerRepository;
+import br.com.delivery.api.gateways.mongo.OrderRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -13,6 +14,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DeliveryApplication implements CommandLineRunner {
 
     private final CustomerRepository repository;
+    private final OrderRepository orderRepository;
 
     public static void main(final String[] args) {
         SpringApplication.run(DeliveryApplication.class, args);
