@@ -19,7 +19,5 @@ public class SushiApplication implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... strings) throws Exception {
-        repository.deleteAll();
-    }
+    public void run(String... strings) throws Exception {}
 }

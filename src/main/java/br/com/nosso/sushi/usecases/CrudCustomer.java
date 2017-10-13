@@ -7,13 +7,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-public class CadastraCliente {
+public class CrudCustomer {
 
     private final CustomerGateway customerGateway;
 
-    public Customer cadastraCliente(Customer customer){
-        return customerGateway.save(customer);
-    }
+    public Customer createCustomer(Customer customer){return customerGateway.save(customer);}
+
+    public Customer findCustomerByName(String name){return customerGateway.findCustomerByName(name);}
 
 
 

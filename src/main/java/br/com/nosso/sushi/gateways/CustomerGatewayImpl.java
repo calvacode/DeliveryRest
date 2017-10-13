@@ -14,4 +14,6 @@ public class CustomerGatewayImpl implements CustomerGateway {
     public Customer save(Customer customer){
         return customerRepository.save(customer);
     }
+
+    public Customer findCustomerByName(String name){return customerRepository.findByName(name);}
 }
