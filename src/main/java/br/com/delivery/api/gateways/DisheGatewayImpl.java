@@ -3,9 +3,11 @@ package br.com.delivery.api.gateways;
 import br.com.delivery.api.domain.Dishe;
 import br.com.delivery.api.gateways.mongo.DisheRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
+@Repository
 public class DisheGatewayImpl implements DisheGateway {
 
     @Autowired

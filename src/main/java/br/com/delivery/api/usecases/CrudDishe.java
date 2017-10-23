@@ -3,6 +3,7 @@ package br.com.delivery.api.usecases;
 import br.com.delivery.api.domain.Dishe;
 import br.com.delivery.api.gateways.DisheGateway;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,6 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class CrudDishe {
 
+    @Autowired
     private DisheGateway disheGateway;
 
     public Dishe saveDishe(Dishe dishe){return disheGateway.save(dishe);}

@@ -3,6 +3,7 @@ package br.com.delivery.api.gateways;
 import br.com.delivery.api.domain.Customer;
 import br.com.delivery.api.gateways.mongo.CustomerRepository;
 import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
