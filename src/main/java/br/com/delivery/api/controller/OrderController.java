@@ -19,8 +19,6 @@ public class OrderController {
     @PostMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity save(@RequestBody Order order){
 
-        crudOrder.createOrder(order);
-
-        return ResponseEntity.ok(order);
+        return ResponseEntity.ok(crudOrder.createOrder(order));
     }
 }
