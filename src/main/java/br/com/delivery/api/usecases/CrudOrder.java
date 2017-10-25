@@ -12,4 +12,6 @@ public class CrudOrder {
     private final OrderGateway orderGateway;
 
     public Order createOrder(Order order){return orderGateway.save(order);}
+
+    public Order findOrder(String phoneNumber){return orderGateway.findOrderByPhoneNumber(phoneNumber);}
 }

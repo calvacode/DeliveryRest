@@ -12,7 +12,8 @@ public class OrderGatewayImpl implements OrderGateway {
     private OrderRepository orderRepository;
 
     @Override
-    public Order save(Order order) {
-        return orderRepository.save(order);
-    }
+    public Order save(Order order) {return orderRepository.save(order);}
+
+    @Override
+    public Order findOrderByPhoneNumber(String phoneNumber){return orderRepository.findOne(phoneNumber);}
 }

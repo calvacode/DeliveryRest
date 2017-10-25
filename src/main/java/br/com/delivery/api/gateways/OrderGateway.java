@@ -6,4 +6,6 @@ public interface OrderGateway {
 
     Order save(Order order);
 
+    Order findOrderByPhoneNumber(String phoneNumber);
+
 }
