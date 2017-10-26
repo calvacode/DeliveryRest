@@ -5,10 +5,9 @@ import br.com.delivery.api.usecases.CrudOrder;
 import lombok.AllArgsConstructor;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import javax.print.attribute.standard.Media;
 
 @RestController
 @AllArgsConstructor
@@ -20,5 +19,16 @@ public class OrderController {
     public ResponseEntity save(@RequestBody Order order){
 
         return ResponseEntity.ok(crudOrder.createOrder(order));
+    }
+
+    @RequestMapping("/{phoneCustomerOrder}")
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity findOrder(@PathVariable String phoneCustomerOrder){
+        return ResponseEntity.ok(crudOrder.findOrder(phoneCustomerOrder));
+    }
+
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity findAllOrder(){
+        return ResponseEntity.ok(crudOrder.findAll());
     }
 }
