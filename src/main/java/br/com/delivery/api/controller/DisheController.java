@@ -40,6 +40,12 @@ public class DisheController {
         return ResponseEntity.ok(crudDishe.findDisheByCategory(category));
     }
 
+    @RequestMapping("/name/{name}")
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Dishe>> getDisheByName(@PathVariable("name") String name){
+        return ResponseEntity.ok(crudDishe.findDisheByName(name));
+    }
+
 
 
 }

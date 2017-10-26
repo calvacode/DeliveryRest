@@ -12,6 +12,8 @@ public interface DisheGateway  {
 
     Dishe findDisheById(String id);
 
-    List<Dishe> findDisheByCategory(String category);
+    List<Dishe> findDisheByCategoryIgnoreCase(String category);
+
+    List<Dishe> findDisheByNameIgnoreCase(String name);
 
 }

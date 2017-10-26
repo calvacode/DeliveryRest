@@ -21,7 +21,9 @@ public class CrudDishe {
 
     public Dishe findDisheById(String id){return disheGateway.findDisheById(id);}
 
-    public List<Dishe> findDisheByCategory(String category){return disheGateway.findDisheByCategory(category);}
+    public List<Dishe> findDisheByCategory(String category){return disheGateway.findDisheByCategoryIgnoreCase(category);}
+
+    public List<Dishe> findDisheByName(String category){return disheGateway.findDisheByNameIgnoreCase(category);}
 
 
 }
