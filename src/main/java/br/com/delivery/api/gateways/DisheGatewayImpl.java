@@ -28,4 +28,11 @@ public class DisheGatewayImpl implements DisheGateway {
     public Dishe findDisheById(String id) {
         return disheRepository.findDisheById(id);
     }
+
+    @Override
+    public List<Dishe> findDisheByCategory(String category) {
+        return disheRepository.findDisheByCategory(category);
+    }
+
+
 }

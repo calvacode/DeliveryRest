@@ -34,6 +34,12 @@ public class DisheController {
         return ResponseEntity.ok(crudDishe.findDisheById(id));
     }
 
+    @RequestMapping("/category/{category}")
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponseEntity<List<Dishe>> getDisheByCategory(@PathVariable("category") String category){
+        return ResponseEntity.ok(crudDishe.findDisheByCategory(category));
+    }
+
 
 
 }

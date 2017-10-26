@@ -12,4 +12,6 @@ public interface DisheGateway  {
 
     Dishe findDisheById(String id);
 
+    List<Dishe> findDisheByCategory(String category);
+
 }

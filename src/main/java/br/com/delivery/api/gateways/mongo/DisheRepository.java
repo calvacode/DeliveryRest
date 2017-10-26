@@ -11,4 +11,8 @@ public interface DisheRepository extends MongoRepository<Dishe, String> {
 
     List<Dishe> findAll();
 
+    List<Dishe> findDisheByCategory(String category);
+
+
+
 }
