@@ -12,8 +12,7 @@ import java.util.List;
 @AllArgsConstructor
 public class CrudDishe {
 
-    @Autowired
-    private DisheGateway disheGateway;
+    private final DisheGateway disheGateway;
 
     public Dishe saveDishe(Dishe dishe){return disheGateway.save(dishe);}
 

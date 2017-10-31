@@ -12,7 +12,9 @@ public class Order {
     private String id;
 
     private Customer customer;
+
     private List<Dishe> disheList;
+
     private String addressOfDelivery;
 
 }
